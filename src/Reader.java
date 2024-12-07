@@ -5,10 +5,10 @@ abstract class Reader extends Resident {
         super(name);
     }
 
-    // Абстрактный метод для обработки публикации
+
     protected abstract void handlePublication(Publication publication);
 
-    // Общий метод для обработки списка публикаций
+
     protected <T extends Publication> void processPublications(List<T> publications) {
         if (!publications.isEmpty()) {
             Optional<T> availablePublication = Publication.takeAvailablePublication(publications);
