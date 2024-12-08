@@ -46,4 +46,7 @@ class SunnyCity {
             }
         }
     }
+    public void clear(){
+        residents.clear();
+    }
 }

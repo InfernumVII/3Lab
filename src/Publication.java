@@ -7,7 +7,7 @@ abstract class Publication {
 
     public Publication(String title) {
         this.title = title;
-        this.isTaken = false; // По умолчанию издание свободно
+        this.isTaken = false;
     }
 
     public String getTitle() {
